@@ -1,0 +1,7 @@
+node_modules/
+.env
+proxy.pid
+*.log
+*.log.*
+logs/
+.DS_Store

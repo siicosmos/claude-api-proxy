@@ -1,0 +1,21 @@
+{
+  "name": "claude-api-proxy",
+  "version": "1.0.0",
+  "description": "A transparent proxy for Claude API that transforms responses to match Anthropic's expected format",
+  "main": "src/proxy.js",
+  "scripts": {
+    "start": "node src/proxy.js",
+    "dev": "node --watch src/proxy.js"
+  },
+  "keywords": [
+    "claude",
+    "anthropic",
+    "proxy",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
