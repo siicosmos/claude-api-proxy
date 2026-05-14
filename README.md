@@ -121,25 +121,27 @@ Update your Claude Code configuration to use the local proxy:
 Example log output:
 
 ```
-[REQUEST] POST /v1/messages?beta=true from 127.0.0.1
-[RESPONSE] 200 (streaming)
-[TRANSFORM] Empty content array -> placeholder
-[STREAM] Transformed text_delta -> text
-[COMPLETE] 1234ms, body: 2048 bytes
+[2026-05-13, 4:21:35 PM] [REQUEST] POST /v1/messages?beta=true from 127.0.0.1
+[2026-05-13, 4:21:36 PM] [RESPONSE] 200 (streaming)
+[2026-05-13, 4:21:36 PM] [TRANSFORM] Empty content array -> placeholder
+[2026-05-13, 4:21:36 PM] [STREAM] Transformed text_delta -> text
+[2026-05-13, 4:21:36 PM] [COMPLETE] 1234ms, body: 2048 bytes
 
-=== Proxy Statistics (uptime: 300s) ===
-Total requests: 42
-  - Successful: 41
-  - Failed: 1
-  - Streaming: 35
-Transformed responses: 12
-Content transforms:
-  - Empty to array: 5
-  - String to array: 3
-  - value->text: 8
-  - Missing type: 2
-Log size: 156KB
-=====================================
+[2026-05-13, 4:26:35 PM] === Proxy Statistics (uptime: 300s) ===
+[2026-05-13, 4:26:35 PM] Total requests: 42
+[2026-05-13, 4:26:35 PM]   - Successful: 41
+[2026-05-13, 4:26:35 PM]   - Failed: 1
+[2026-05-13, 4:26:35 PM]   - Streaming: 35
+[2026-05-13, 4:26:35 PM] Transformed responses: 12
+[2026-05-13, 4:26:35 PM] Content transforms:
+[2026-05-13, 4:26:35 PM]   - Empty to array: 5
+[2026-05-13, 4:26:35 PM]   - String to array: 3
+[2026-05-13, 4:26:35 PM]   - value->text: 8
+[2026-05-13, 4:26:35 PM]   - Missing type: 2
+[2026-05-13, 4:26:35 PM] Log size: 156KB
+[2026-05-13, 4:26:35 PM] =====================================
+
+[2026-05-13, 4:30:00 PM] [SHUTDOWN] Received SIGTERM, stopping...
 ```
 
 ## License
